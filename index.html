@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">CSS Grid: Align an Item Horizontally using justify-self</title>
+	<meta charset="UTF-8">CSS Grid: Align an Item Vertically using align-self</title>
 	<link rel="stylesheet" href="1.css">
 </head>
 <body>
-	<!-- f course, you can make items consume multiple rows just like you can with columns. You define the horizontal lines you want an item to start and stop at using the grid-row property on a grid item.
+<!-- Just as you can align an item horizontally, there's a way to align an item vertically as well. To do this, you use the align-self property on an item. This property accepts all of the same values as justify-self from the last challenge.
 
 
-	Make the element with the item5 class consume the last two rows. -->	
-	<style>
+Align the item with the class item3 vertically at the end. -->
+<style>
   .item1{background:LightSkyBlue;}
   .item2{background:LightSalmon;}
-  .item3{background:PaleTurquoise;}
-  .item4{background:LightPink;}
   
-  .item5 {
-    background: PaleGreen;
-    grid-row: 2/4;
+  .item3 {
+    background: PaleTurquoise;
     /* add your code below this line */
     
-    
+    align-self:end;
     /* add your code above this line */
   }
+  
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
   
   .container {
     font-size: 40px;
