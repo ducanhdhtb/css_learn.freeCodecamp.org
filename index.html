@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CSS Grid: Add Rows with grid-template-rows</title>
+	<title>CSS Grid: Use CSS Grid units to Change the Size of Columns and Rows</title>
 	<link rel="stylesheet" href="1.css">
 </head>
 <body>
-<!-- The grid you created in the last challenge will set the number of rows automatically. To adjust the rows manually, use the grid-template-rows property in the same way you used grid-template-columns in previous challenge.
+<!-- You can use absolute and relative units like px and em in CSS Grid to define the size of rows and columns. You can use these as well:
 
+fr: sets the column or row to a fraction of the available space,
 
-Add two rows to the grid that are 50px tall each. -->
+auto: sets the column or row to the width or height of its content automatically,
+
+%: adjusts the column or row to the percent width of its container.
+
+Here's the code that generates the output in the preview:
+
+grid-template-columns: auto 50px 10% 2fr 1fr;
+This snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth. -->
 <style>
   .d1{background:LightSkyBlue;}
   .d2{background:LightSalmon;}
@@ -22,12 +30,13 @@ Add two rows to the grid that are 50px tall each. -->
     width: 100%;
     background: LightGray;
     display: grid;
-  
-    /* add your code below this line */
-      grid-template-columns: 100px 100px 100px;
-      grid-template-rows:50px 50px;
+    /* modify the code below this line */
     
-    /* add your code above this line */
+    /*grid-template-columns: auto 50px 10% 2fr 1fr;*/
+    grid-template-columns:1fr 100px 2fr;
+    
+    /* modify the code above this line */
+
   }
 </style>
   
