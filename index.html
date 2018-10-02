@@ -2,22 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CSS Grid: Use CSS Grid units to Change the Size of Columns and Rows</title>
+	<title>CSS Grid: Create a Column Gap Using grid-column-gap</title>
 	<link rel="stylesheet" href="1.css">
 </head>
 <body>
-<!-- You can use absolute and relative units like px and em in CSS Grid to define the size of rows and columns. You can use these as well:
+<!-- So far in the grids you have created, the columns have all been tight up against each other. Sometimes you want a gap in between the columns. To add a gap between the columns, use the grid-column-gap property like this:
 
-fr: sets the column or row to a fraction of the available space,
+grid-column-gap: 10px;
+This creates 10px of empty space between all of our columns.
 
-auto: sets the column or row to the width or height of its content automatically,
 
-%: adjusts the column or row to the percent width of its container.
-
-Here's the code that generates the output in the preview:
-
-grid-template-columns: auto 50px 10% 2fr 1fr;
-This snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth. -->
+Give the columns in the grid a 20px gap. -->
 <style>
   .d1{background:LightSkyBlue;}
   .d2{background:LightSalmon;}
@@ -27,16 +22,16 @@ This snippet creates five columns. The first column is as wide as its content, t
   
   .container {
     font-size: 40px;
+    min-height: 300px;
     width: 100%;
     background: LightGray;
     display: grid;
-    /* modify the code below this line */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* add your code below this line */
     
-    /*grid-template-columns: auto 50px 10% 2fr 1fr;*/
-    grid-template-columns:1fr 100px 2fr;
-    
-    /* modify the code above this line */
-
+    grid-column-gap:20px
+    /* add your code above this line */
   }
 </style>
   
