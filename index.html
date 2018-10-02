@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">CSS Grid: Align All Items Horizontally using justify-items</title>
+	<meta charset="UTF-8">CSS Grid: Align All Items Vertically using align-items</title>
 	<link rel="stylesheet" href="1.css">
 </head>
 <body>
-<!-- Sometimes you want all the items in your CSS Grid to share the same alignment. You can use the previously learned properties and align them individually, or you can align them all at once horizontally by using justify-items on your grid container. This property can accept all the same values you learned about in the previous two challenges, the difference being that it will move all the items in our grid to the desired alignment.
+<!-- Using the align-items property on a grid container will set the vertical alignment for all the items in our grid.
 
 
-Use this property to center all our items horizontally. -->
+Use it now to move all the items to the end of each cell. -->
 <style>
   .item1{background:LightSkyBlue;}
   .item2{background:LightSalmon;}
@@ -26,7 +26,7 @@ Use this property to center all our items horizontally. -->
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
     /* add your code below this line */
-    justify-items:center;
+    align-items:end
     
     /* add your code above this line */
   }
@@ -38,6 +38,7 @@ Use this property to center all our items horizontally. -->
   <div class="item3">3</div>
   <div class="item4">4</div>
   <div class="item5">5</div>
+</div>item5">5</div>
 </div>
 </body>
 </html>
